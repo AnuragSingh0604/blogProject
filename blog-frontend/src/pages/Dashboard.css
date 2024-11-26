@@ -1,0 +1,218 @@
+/* src/components/Dashboard.css */
+body {
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.dashboardNavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  right: 0;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin-top: 0; /* Adjust to match navbar height */
+  padding: 20px;
+  min-height: 100vh;
+
+  overflow-y: auto;
+
+  /* Space below the fixed navbar */
+
+  background-color: #6f65ca;
+}
+.navbarActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboardButton {
+  margin: 5px auto;
+
+  color: black;
+
+  border: 1px solid black;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  overflow-anchor: auto;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dashboardInput {
+  border: 0.2px solid black;
+
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.dashboardButton:hover {
+  background-color: #e33246;
+}
+
+.blog-item {
+  border: 1px solid #151414;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: #dd0d0d75;
+}
+
+.dashboard-message {
+  color: green;
+  margin-top: 10px;
+}
+.dashboardTitle {
+  margin: 0;
+  font-size: 24px;
+  color: #f5efef;
+}
+.blog-item .searchButton {
+  flex-direction: row;
+  display: flex;
+
+  justify-content: space-around;
+}
+.commentDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.commentDiv button:hover {
+  background-color: #e33246;
+}
+.blog-card {
+  background-color: #f5f1f1;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid black;
+
+  margin: 80px 20px 20px; /* Top margin ensures space below the navbar */
+  padding: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.blog-header {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-bottom: 10px;
+}
+.author-name {
+  font-size: 14px;
+  margin: 20px;
+  color: #666666;
+  font-weight: bold;
+}
+.blog-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-summary {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.5;
+}
+.blog-title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333333;
+}
+.blog-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.like-button,
+.comment-button,
+.details-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.like-button {
+  background-color: #e3f2fd;
+}
+.comment-button {
+  background-color: #e8f5e9;
+}
+.details-button {
+  background-color: #ffebee;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.commentDiv textarea {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.commentDiv button {
+  align-self: flex-end;
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+li strong {
+  color: #4caf50;
+}

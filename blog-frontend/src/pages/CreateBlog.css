@@ -1,0 +1,75 @@
+/* Center the form on the page */
+
+.create-blog-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #0f0505;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #6f65ca;
+}
+
+.create-blog-container h1 {
+  text-align: center;
+  font-size: 22px;
+  color: #f5efef;
+  margin-bottom: 20px;
+}
+
+.create-blog-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-blog-container label {
+  font-size: 16px;
+  color: #f5f1f1;
+  margin-bottom: 5px;
+}
+
+.create-blog-container input,
+.create-blog-container textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #1b1010;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+.create-blog-container textarea {
+  min-height: 100px;
+}
+
+.create-blog-container button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #f5f1f1;
+  border: none;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid #1b1010;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-blog-container button:hover {
+  background-color: #e33246;
+}
+
+.create-blog-container p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.create-blog-container p.success {
+  color: green;
+}
+
+.create-blog-container p.error {
+  color: red;
+}
