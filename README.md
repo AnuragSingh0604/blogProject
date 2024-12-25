@@ -1,7 +1,5 @@
 # blogProject
 
-Here’s a well-structured and concise README file for your blog application:
-
 
 A full-stack blog application built with React (frontend) and NestJS (backend). This application provides users with the ability to register, log in, create blogs, like/unlike posts, and comment on them, all secured by JWT-based authentication.
 
